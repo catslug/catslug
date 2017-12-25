@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+}
+
+nav {
+    height: 8em;
+}
+
+footer {
+    position: relative;
+    z-index: 999;
+}
+
+.page-footer {
+    background-color: #5b6bc1;
+}
+
+.nav-wrapper {
+    background-color: white;
+    z-index: 1000;
+}
+
+a#nav-logo {
+    color: #444;
+    letter-spacing: 4px;
+}
+
+p.nav-subtext {
+    color: #444;
+}
+
+nav ul a {
+    color: #444;
+    letter-spacing: 1px;
+}
+
+nav ul a:hover,
+nav ul a:active,
+nav ul a:focus {
+    background-color: rgb(209, 250, 228);
+}
+
+#pixel-banner {
+    width: 100%;
+    position: fixed;
+    background-attachment: cover;
+    top: 0;
+}
+
+.parallax-class {
+    position: relative;
+}
+
+.more-content {
+    position: relative;
+    width: 100% ;
+    margin-top: 11em;
+    margin-bottom: 11em;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.bio-p {
+    font-size: 1.2em;
+}
+
+.port-header {
+    text-align: center;
+    font-size: 2.25em;
+    letter-spacing: 3px;
+}
+
+.white-bg {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 1em 10% 4em;
+    z-index: 1001;
+}
+
+#skills-section, 
+.white-bg {
+    margin-bottom: 11em;
+}
+
+.chip {
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 0 30px;
+    background-color: #d1fae4;
+}
