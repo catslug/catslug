@@ -1,265 +1,277 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://use.fontawesome.com/dd43d5a0ce.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <scrypt src="assets/js/logic.js"></scrypt>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <title>Lindsay Wall</title>
 </head>
 <body>
-  <div id='scene' class='parallax-class row'>
-    <nav>
+  <div id='scene'>
+    <nav >
       <div class="nav-wrapper valign-wrapper">
           <a href="#" class="brand-logo center" id='nav-logo'>Lindsay Wall</a>
-<!--             <p class='nav-subtext'>software engineer | creative | badass slug empress</p>
- -->
         <ul id="nav-mobile" class="right hide-on-med-and-down right-align">
-          <li><a href="#portfolio-section">Portfolio</a></li>
-          <li><a href="code.html">Code Samples</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class='waves-effect waves-light' href="#skills-section">Skills</a></li>
+          <li><a class='waves-effect waves-light' id='portfolio-nav' href="#portfolio-section">Portfolio</a></li>
+          <li><a class='waves-effect waves-light' href="code.html">Code Samples</a></li>
+          <li><a class='waves-effect waves-light' href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <img id='pixel-banner' data-depth='0.6' src='assets/images/pixelbg3.jpeg'>
+    <div class='contact-icons-div'>
+      <a id='fixed-contact' href='#' alt='connect' class="hidde-icons btn-floating waves-effect waves-light indigo lighten-1 fixed-contact"><i class="material-icons">more_vert</i></a>
+      <div class='hidden-icons-div'>
+        <a target='blank' href='https://www.linkedin.com/in/lindsay-wall/'><image id='linkedin-icon' class='hidden-icons' src='assets/images/linkedin.png'></a>
+        <a target='blank' href='https://github.com/catslug'><image id='github-icon' class='hidden-icons' src='assets/images/github.png'></a>
+        <a target='blank' href='https://stackoverflow.com/users/8431091/lindsay?tab=profile'><image id='stackoverflow-icon' class='hidden-icons' src='assets/images/stackoverflow.png'></a>
+      </div>
+    </div>
+    
+      <img class='parallax' id='pixel-banner' src='assets/images/pixelbg3.jpeg'>
     
     <div class='more-content'>
       <p class='bio-p' data-depth='0.2'>Freshly brewed web developer having transitioned into a creative and challenging developer role in the tech industry. Emerging from an investigative research-based position in the finance industry, I bring with me a robust comprehension of problem-solving, writing, customer service, and both sides of the client experience. I am immensely passionate about empathetic communication and empowering teamwork.</p>
       <p class='bio-p'>Javascript is my playground. Lately I've been focusing on developing in React and React-Native.</p>
       <p class='bio-p'>When not coding I'm finding other ways to create. If you let me, I have plenty to say about fiber arts, character creation, and table top board games.</p>
     </div>
-  </div>
+  
 
-  <div class='white-bg center' id='skills-section'>
-    <div class='port-header'>
-      <p>skills</p>
-    </div>
-    <div class='chippies'>
-      <div class='chip'>ReactJS</div>
-      <div class='chip'>React Native</div>
-      <div class='chip'>Javascript</div>
-      <div class='chip'>HTML5</div>
-      <div class='chip'>CSS3</div>
-      <div class='chip'>Sass</div>
-      <div class='chip'>Materialize</div>
-      <div class='chip'>Twitter Bootstrap</div>
-      <div class='chip'>jQuery</div>
-      <div class='chip'>Google Firebase</div>
-      <div class='chip'>SQL</div>
-      <div class='chip'>NodeJS</div>
-      <div class='chip'>Express Handlebars</div>
-      <div class='chip'>Sequelize (ORM)</div>
-      <div class='chip'>ExpressJS</div>
-      <div class='chip'>Heroku</div>
-    </div>
-  </div>
-
-  <div class='white-bg'>
-    <div id='portfolio-section' class='row'>
+    <div class='white-bg center' id='skills-section'>
       <div class='port-header'>
-        <p>portfolio</p>
+        <p>skills</p>
       </div>
+      <div class='chippies'>
+        <div class='chip'>ReactJS</div>
+        <div class='chip'>React Native</div>
+        <div class='chip'>Javascript</div>
+        <div class='chip'>HTML5</div>
+        <div class='chip'>CSS3</div>
+        <div class='chip'>Sass</div>
+        <div class='chip'>Materialize</div>
+        <div class='chip'>Twitter Bootstrap</div>
+        <div class='chip'>jQuery</div>
+        <div class='chip'>Google Firebase</div>
+        <div class='chip'>SQL</div>
+        <div class='chip'>NodeJS</div>
+        <div class='chip'>Express Handlebars</div>
+        <div class='chip'>Sequelize (ORM)</div>
+        <div class='chip'>ExpressJS</div>
+        <div class='chip'>Heroku</div>
+      </div>
+    </div>
 
-      <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/hangman.png">
+    <div class='white-bg' id='portfolio-section'>
+      <div class='row'>
+        <div class='port-header'>
+          <p>portfolio</p>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/hangman.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Hangman</span>
+              <p>Steven Universe-themed hangman game that tracks your total wins and losses and plays a character-appropriate song when guessed correctly.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Javascript, jQuery, & Bootstrap.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='https://catslug.github.io/hangman-game/' alt='live site' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/hangman-game' alt='code' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
           </div>
-          <div class="card-content">
-            <span class="card-title">Hangman</span>
-            <p>Steven Universe-themed hangman game that tracks your total wins and losses and plays a character-appropriate song when guessed correctly.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Javascript, jQuery, & Bootstrap.</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='https://catslug.github.io/hangman-game/' alt='live site' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/hangman-game' alt='code' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+        </div>
+
+         <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/crystalgame.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Logic/Math Game</span>
+              <p>A strategy-based game of memory that requires users to keep track of the hidden values of crystallized creatures and carefully match their click total to a randomly generated goal number that automatically resets after each round. Game tracks your total wins and losses.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Javascript, jQuery, & Bootstrap.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='https://catslug.github.io/crystal-logic-game/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/crystal-logic-game' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
           </div>
         </div>
       </div>
 
-       <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/crystalgame.png">
+      <div class='row'>
+        <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/giphyapp.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Giphy App</span>
+              <p>A simple app that lets users view gifs from the Giphy API matching pre-populated button topics. Users can add more buttons as they see fit, and pause and start gifs.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Javascript, jQuery, Bootstrap, & the Giphy API.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='https://catslug.github.io/giphy-app/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/giphy-app' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
           </div>
-          <div class="card-content">
-            <span class="card-title">Logic/Math Game</span>
-            <p>A strategy-based game of memory that requires users to keep track of the hidden values of crystallized creatures and carefully match their click total to a randomly generated goal number that automatically resets after each round. Game tracks your total wins and losses.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Javascript, jQuery, & Bootstrap.</p>
+        </div>
+
+         <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/trivia.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Trivia Game</span>
+              <p>A timed cross-genre, alien-themed trivia game that incrementally displays whether you guessed correctly, and then shows a tally at the end. Know your sci-fi.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Javascript, jQuery, & Bootstrap.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='https://catslug.github.io/trivia-game/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/trivia-game' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
           </div>
-          <div class='card-action'>
-            <a target='blank' href='https://catslug.github.io/crystal-logic-game/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/crystal-logic-game' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/friend-finder.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Friend Finder</span>
+              <p>A simple full stack app that lets users complete a survey and be matched with other users who have similar gaming interests.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, Slick (Javascript carousel animations), ExpressJS Server, and NodeJS.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='http://glacial-fortress-55092.herokuapp.com/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/friend-finder' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/nom-burger.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Nom Burger</span>
+              <p>A full stack app that allows users to input a burger that will appear in a list on the left of uneaten items. Users have the option to devour burgers with the click of a button. Bob's Burgers fans will likely appreciate the menu.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Javascript, jQuery, Bootstrap, ExpressJS Server, NodeJS, SQL Database, Handlebars (server-side templating).</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='http://hidden-caverns-37739.herokuapp.com/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/nom-burger' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class='row'>
+        <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/Pourcast.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Pourcast</span>
+              <p>A weather app that cleverly pairs your forecast with an appropriate beer. Developer-designed pairings match your temperature & weather conditions with specific beers from the BreweryDB API. A log of all recommended beers are stored in a persistent Firebase database.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, OdometerJS, Google Firebase, WeatherUnderground API, BreweryDB API, New York Times API, & IP API.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='https://sarahjelt.github.io/pourcast/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/pourcast' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/rps.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Rock Paper Scissors Multiplayer</span>
+              <p>A multiplayer Rock Paper Scissors app supported by a live Firebase database and player-to-player chat capabilities.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, OdometerJS, & Google Firebase.</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='https://catslug.github.io/rps-multiplayer/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/rps-multiplayer' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col s12 m6">
+          <div class="card indigo lighten-5">
+            <div class="card-image">
+              <img src="assets/images/trident.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Trident of Mina: a tactical RPG</span>
+              <p>A nostalgic grid-based, asymmetrical tactical RPG experience built using a Javascript engine for HTML5 game development. Trident of Mina is a full stack app that includes user authentication and persistent data storage.</p>
+              <br>
+              <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, Phaser (Javascript game engine for HTML5), Passport (user authentication), NodeJS, ExpressJS Server, Sequelize (ORM), SQL Database, & Handlebars (server-side templating).</p>
+            </div>
+            <div class='card-action'>
+              <a target='blank' href='http://trident-of-mina.herokuapp.com/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
+              <a target='blank' href='https://github.com/catslug/trident-rpg' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class='row'>
-      <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/giphyapp.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Giphy App</span>
-            <p>A simple app that lets users view gifs from the Giphy API matching pre-populated button topics. Users can add more buttons as they see fit, and pause and start gifs.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Javascript, jQuery, Bootstrap, & the Giphy API.</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='https://catslug.github.io/giphy-app/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/giphy-app' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div>
-
-       <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/trivia.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Trivia Game</span>
-            <p>A timed cross-genre, alien-themed trivia game that incrementally displays whether you guessed correctly, and then shows a tally at the end. Know your sci-fi.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Javascript, jQuery, & Bootstrap.</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='https://catslug.github.io/trivia-game/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/trivia-game' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class='row'>
-      <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/friend-finder.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Friend Finder</span>
-            <p>A simple full stack app that lets users complete a survey and be matched with other users who have similar gaming interests.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, Slick (Javascript carousel animations), ExpressJS Server, and NodeJS.</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='http://glacial-fortress-55092.herokuapp.com/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/friend-finder' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div>
-
-       <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/nom-burger.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Nom Burger</span>
-            <p>A full stack app that allows users to input a burger that will appear in a list on the left of uneaten items. Users have the option to devour burgers with the click of a button. Bob's Burgers fans will likely appreciate the menu.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Javascript, jQuery, Bootstrap, ExpressJS Server, NodeJS, SQL Database, Handlebars (server-side templating).</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='http://hidden-caverns-37739.herokuapp.com/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/nom-burger' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div> 
-    </div>
-
-    <div class='row'>
-      <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/Pourcast.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Pourcast</span>
-            <p>A weather app that cleverly pairs your forecast with an appropriate beer. Developer-designed pairings match your temperature & weather conditions with specific beers from the BreweryDB API. A log of all recommended beers are stored in a persistent Firebase database.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, OdometerJS, Google Firebase, WeatherUnderground API, BreweryDB API, New York Times API, & IP API.</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='https://sarahjelt.github.io/pourcast/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/pourcast' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div>
-
-       <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/rps.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Rock Paper Scissors Multiplayer</span>
-            <p>A multiplayer Rock Paper Scissors app supported by a live Firebase database and player-to-player chat capabilities.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, OdometerJS, & Google Firebase.</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='https://catslug.github.io/rps-multiplayer/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/rps-multiplayer' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='row'>
-      <div class="col s12 m6">
-        <div class="card indigo lighten-5">
-          <div class="card-image">
-            <img src="assets/images/trident.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Trident of Mina: a tactical RPG</span>
-            <p>A nostalgic grid-based, asymmetrical tactical RPG experience built using a Javascript engine for HTML5 game development. Trident of Mina is a full stack app that includes user authentication and persistent data storage.</p>
-            <br>
-            <p>Built with HTML5, CSS3, Bootstrap, Javascript, jQuery, Phaser (Javascript game engine for HTML5), Passport (user authentication), NodeJS, ExpressJS Server, Sequelize (ORM), SQL Database, & Handlebars (server-side templating).</p>
-          </div>
-          <div class='card-action'>
-            <a target='blank' href='http://trident-of-mina.herokuapp.com/' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">call_made</i></a>
-            <a target='blank' href='https://github.com/catslug/trident-rpg' class="btn-floating waves-effect waves-light indigo lighten-1"><i class="material-icons">code</i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+    <footer class="page-footer">
       <div class="container">
-      © 2018 Copyright Lindsay Wall
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-    </div>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Frivolous facts:</h5>
+            <p class="grey-text text-lighten-4">I like snails and slugs, embroidery, manga, indie and non-traditional comics, table-top games, and RPGs (think <a target='blank' href='https://rpggeek.com/rpgitem/49630/psi-run' alt='psi*run'>Psi*Run</a> not D&D). I've been volunteering with LGBTQ youth since 2015.  At heart I'm a creative who just likes to build things.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" target='blank' href="https://www.linkedin.com/in/lindsay-wall/">LinkedIn</a></li>
+              <li><a class="grey-text text-lighten-3" target='blank' href="https://github.com/catslug">Github</a></li>
+              <li><a class="grey-text text-lighten-3" target='blank' href="https://stackoverflow.com/users/8431091/lindsay?tab=profile">StackOverflow</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright Lindsay Wall
+        <span class='right'>This site built with HTML5, CSS3, Javascript, jQuery, & Materialize.</span>
+      </div>
+    </footer>
   </div>
-</footer>
+
+  <script type="text/javascript" src="assets/js/zenscroll-min.js"></script>
+  <script type="text/javascript" src="assets/js/logic.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
 </body>
 </html>

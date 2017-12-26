@@ -1,13 +1,14 @@
-console.log('loaded')
+$(document).ready(function() {
 
-$(document).on('load', function() {
-  console.log('I get to this page');
-
-  const scene = document.getElementById('scene');
-  const parallaxInstance = new Parallax(scene, {pointerEvents: true});
-  parallaxInstance.friction(0.2, 0.2)
-
-  $('.more-content').on('click', function() {
-    console.log('hi I get to this page')
+  $('.contact-icons-div').mouseover(function() {
+    $('.hidden-icons-div').addClass('shown-icons-div')
+    $('#linkedin-icon').addClass('linkedin-icon')
+    $('#github-icon').addClass('github-icon')
+    $('#stackoverflow-icon').addClass('stackoverflow-icon')
   })
+
+  $('.contact-icons-div').mouseleave(function() {
+    $('.hidden-icons-div').removeClass('shown-icons-div')
+  })
+
 })

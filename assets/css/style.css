@@ -2,6 +2,16 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#scene {
+    flex: 1 0 auto;
+}
+
 nav {
     height: 8em;
 }
@@ -11,8 +21,35 @@ footer {
     z-index: 999;
 }
 
+a {
+    color: #c4c9e6;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #b8c2f7;
+    transition: all 0.5s;
+}
+
+.card {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.card .card-content {
+    min-height: 19em;
+}
+
 .page-footer {
     background-color: #5b6bc1;
+}
+
+.fixed-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1002;
 }
 
 .nav-wrapper {
@@ -37,6 +74,7 @@ nav ul a {
 nav ul a:hover,
 nav ul a:active,
 nav ul a:focus {
+    color: #444;
     background-color: rgb(209, 250, 228);
 }
 
@@ -54,8 +92,8 @@ nav ul a:focus {
 .more-content {
     position: relative;
     width: 100% ;
-    margin-top: 11em;
-    margin-bottom: 11em;
+    margin-top: 13em;
+    margin-bottom: 13em;
     background-color: white;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -83,7 +121,7 @@ nav ul a:focus {
 
 #skills-section, 
 .white-bg {
-    margin-bottom: 11em;
+    margin-bottom: 13em;
 }
 
 .chip {
@@ -95,4 +133,58 @@ nav ul a:focus {
     margin-right: 20px;
     padding: 0 30px;
     background-color: #d1fae4;
+}
+
+.contact-icons-div {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 70px;
+    height: 300px;
+    z-index: 1003;
+}
+
+.linkedin-icon {
+    position: fixed;
+    width: 3em;
+    right: 29px;
+    bottom: 90px;
+    transition: all 1s;
+}
+
+.github-icon {
+    position: fixed;
+    width: 3em;
+    right: 29px;
+    bottom: 155px;
+    transition: all 1s;
+}
+
+.stackoverflow-icon {
+    position: fixed;
+    width: 3em;
+    right: 29px;
+    bottom: 220px;
+    transition: all 1s;
+}
+
+.hidden-icons-div {
+    position: fixed;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.shown-icons-div {
+    opacity: 1;
+    display: block;
+    transition: all 1s;
+}
+
+.code-section-div {
+    min-height: 80vh;
+    width: 100%;
+    margin: 4em 0;
+    padding: 2em 10%;
+    position: relative;
+    background-color: white;
 }
