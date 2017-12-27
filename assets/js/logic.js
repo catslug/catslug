@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
   $('.contact-icons-div').mouseover(function() {
     $('.hidden-icons-div').addClass('shown-icons-div')
     $('#linkedin-icon').addClass('linkedin-icon')

@@ -8,8 +8,8 @@ body {
     flex-direction: column;
 }
 
-#scene {
-    flex: 1 0 auto;
+.parallax-container {
+    height: 200px;
 }
 
 nav {
@@ -85,15 +85,9 @@ nav ul a:focus {
     top: 0;
 }
 
-.parallax-class {
-    position: relative;
-}
-
 .more-content {
     position: relative;
     width: 100% ;
-    margin-top: 13em;
-    margin-bottom: 13em;
     background-color: white;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -117,11 +111,6 @@ nav ul a:focus {
     width: 100%;
     padding: 1em 10% 4em;
     z-index: 1001;
-}
-
-#skills-section, 
-.white-bg {
-    margin-bottom: 13em;
 }
 
 .chip {
