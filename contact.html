@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/zenscroll-min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://use.fontawesome.com/dd43d5a0ce.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/js/logic.js"></script>
+  <title>Lindsay Wall</title>
+</head>
+<body>
+  <div id='scene'>
+    <nav >
+      <div class="nav-wrapper valign-wrapper">
+          <a href="index.html" class="brand-logo center" id='nav-logo'>Lindsay Wall</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down right-align">
+          <li><a class='waves-effect waves-light' href="index.html#skills-section">Skills</a></li>
+          <li><a class='waves-effect waves-light' id='portfolio-nav' href="index.html#portfolio-section">Portfolio</a></li>
+<!--           <li><a class='waves-effect waves-light' href="code.html">Code Samples</a></li>
+ -->          <li><a class='waves-effect waves-light' href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class='contact-icons-div'>
+      <a id='fixed-contact' href='#' alt='connect' class="hidde-icons btn-floating waves-effect waves-light indigo lighten-1 fixed-contact"><i class="material-icons">more_vert</i></a>
+      <div class='hidden-icons-div'>
+        <a target='blank' href='https://www.linkedin.com/in/lindsay-wall/'><image id='linkedin-icon' class='hidden-icons' src='assets/images/linkedin.png'></a>
+        <a target='blank' href='https://github.com/catslug'><image id='github-icon' class='hidden-icons' src='assets/images/github.png'></a>
+        <a target='blank' href='https://stackoverflow.com/users/8431091/lindsay?tab=profile'><image id='stackoverflow-icon' class='hidden-icons' src='assets/images/stackoverflow.png'></a>
+      </div>
+    </div>
+    
+    <div class="parallax-container">
+      <div class="parallax"><img src="assets/images/pixel3.jpeg"></div>
+    </div>
+
+    <div id='contact-section' class='contact-div'>
+      <div class='row'>
+        <div class='col ls s12'>
+          <h4>Let's talk.</h4>
+          <form action='https://formspree.io/lindsay.is@gmail.com' method='POST'>
+            <div class='input-field'>
+              <label for='name'>name</label>
+              <input type='text' name='name'>
+            </div>
+            <div class='input-field'>
+              <label for='email'>email</label>
+              <input type='email' name='email'>
+            </div>
+            <div class='input-field'>
+              <label for='message'>message</label>
+              <textarea class='materialize-textarea'></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="assets/images/pixel4.jpeg"></div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Frivolous facts:</h5>
+            <p class="grey-text text-lighten-4">I like snails and slugs, embroidery, manga, indie and non-traditional comics, table-top games, and RPGs (think <a target='blank' href='https://rpggeek.com/rpgitem/49630/psi-run' alt='psi*run'>Psi*Run</a> not D&D). I've been volunteering with LGBTQ youth since 2015.  At heart I'm a creative who just likes to build things.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" target='blank' href="https://www.linkedin.com/in/lindsay-wall/">LinkedIn</a></li>
+              <li><a class="grey-text text-lighten-3" target='blank' href="https://github.com/catslug">Github</a></li>
+              <li><a class="grey-text text-lighten-3" target='blank' href="https://stackoverflow.com/users/8431091/lindsay?tab=profile">StackOverflow</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright Lindsay Wall
+        <span class='right'>This site built with HTML5, CSS3, Javascript, jQuery, & Materialize.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+</body>
+</html>

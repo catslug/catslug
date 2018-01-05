@@ -89,14 +89,21 @@ nav ul a:focus {
     position: relative;
     width: 100% ;
     background-color: white;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 5em;
+    padding-bottom: 5em;
     padding-left: 10em;
     padding-right: 10em;
 }
 
+.headshot {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 30px;
+}
+
 .bio-p {
     font-size: 1.2em;
+    margin-right: 40px;
 }
 
 .port-header {
@@ -176,4 +183,10 @@ nav ul a:focus {
     padding: 2em 10%;
     position: relative;
     background-color: white;
+}
+
+.contact-div {
+    width: 100%;
+    background-color: #fff;
+    padding: 4em 20%;
 }
