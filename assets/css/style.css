@@ -63,7 +63,9 @@ a:active {
 
 a#nav-logo {
     color: #444;
-    letter-spacing: 4px;
+    letter-spacing: 15px;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
 }
 
 p.nav-subtext {
