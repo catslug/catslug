@@ -16,6 +16,10 @@ nav {
     height: 8em;
 }
 
+nav a {
+    color: black;
+}
+
 footer {
     position: relative;
     z-index: 999;
@@ -95,15 +99,43 @@ nav ul a:focus {
     padding-right: 10em;
 }
 
+@media screen and (max-width: 800px) {
+    .more-content {
+        padding: 1em;
+    }
+}
+
 .headshot {
     width: 100%;
     margin: 20px 0;
     border-radius: 30px;
 }
 
+@media screen and (max-width: 992px) {
+    .headshot {
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headshot {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
 .bio-p {
     font-size: 1.2em;
     margin-right: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .bio-p {
+        margin-right: 0;
+    }
 }
 
 .port-header {
@@ -120,6 +152,12 @@ nav ul a:focus {
     z-index: 1001;
 }
 
+@media screen and (max-width: 800px) {
+    .white-bg {
+        padding: 1em 0 4em;
+    }
+}
+
 .chip {
     font-size: 16px;
     height: 45px;
@@ -129,6 +167,16 @@ nav ul a:focus {
     margin-right: 20px;
     padding: 0 30px;
     background-color: #d1fae4;
+}
+
+@media screen and (max-width: 600px) {
+    .chip {
+        font-size: 14px;
+        height: 35px;
+        line-height: 35px;
+        margin-right: 10px;
+        padding: 0 15px;
+    }
 }
 
 .contact-icons-div {
