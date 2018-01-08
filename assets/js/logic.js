@@ -16,5 +16,4 @@ $(document).ready(function() {
   $('.contact-icons-div').mouseleave(function() {
     $('.hidden-icons-div').removeClass('shown-icons-div')
   })
-
 })

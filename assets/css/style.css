@@ -42,7 +42,27 @@ a:active {
 }
 
 .card .card-content {
-    min-height: 19em;
+    min-height: 20em;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    top: -2px;
+}
+
+.card-image:hover,
+.card-image:focus,
+.card-image:active {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+a.btn-floating:hover,
+a.btn-floating:focus,
+a.btn-floating:active {
+    background-color: #6c80e8;
+    transition: all 1s;
 }
 
 .page-footer {
@@ -95,8 +115,8 @@ nav ul a:focus {
     position: relative;
     width: 100% ;
     background-color: white;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 9em;
+    padding-bottom: 9em;
     padding-left: 10em;
     padding-right: 10em;
 }
@@ -150,7 +170,7 @@ nav ul a:focus {
     position: relative;
     background-color: white;
     width: 100%;
-    padding: 1em 10% 4em;
+    padding: 5em 10% 10em;
     z-index: 1001;
 }
 
